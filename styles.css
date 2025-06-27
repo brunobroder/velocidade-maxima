@@ -278,3 +278,22 @@ section .list .active .content .information {
     transform: translateX(0);
     opacity: 1;
 }
+/* 📱 Responsividade para telas a partir de 768px */
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 250px;
+    }
+
+    section .list .item .content h2 {
+        font-size: 4em;
+    }
+
+    section .indicators .number {
+        font-size: 5em;
+    }
+}
