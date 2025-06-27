@@ -210,6 +210,25 @@ section .list .item::before {
     /* Faz a sombra ser oval */
     filter: blur(8px);
     /* Adiciona um efeito de desfoque */
+    /* 📱 Responsividade para telas a partir de 768px */
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 250px;
+    }
+
+    section .list .item .content h2 {
+        font-size: 4em;
+    }
+
+    section .indicators .number {
+        font-size: 5em;
+    }
+}
     z-index: -1;
     /* Coloca a sombra atrás do carro */
 }
